@@ -99,4 +99,10 @@ h2 {
     .page-divider {
         border-color: black;
     }
+    .page-divider {
+        border-color: black;
+    }
+    .skills {
+        page-break-before: always;
+    }
 }
