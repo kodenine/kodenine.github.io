@@ -102,7 +102,7 @@ h2 {
     .page-divider {
         border-color: black;
     }
-    .education {
+    .new-page {
         page-break-before: always;
     }
 }
