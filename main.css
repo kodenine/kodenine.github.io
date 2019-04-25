@@ -73,4 +73,7 @@ h3 {
     .page-divider {
         border-color: black;
     }
+    .skills {
+        page-break-before: always;
+    }
 }
