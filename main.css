@@ -70,4 +70,7 @@ h3 {
         max-width: unset;
         min-width: unset;
     }
+    .page-divider {
+        border-color: black;
+    }
 }
