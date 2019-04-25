@@ -1,4 +1,3 @@
-
 .sidebar {
     flex: 0 0 100px;
     padding: 15px;
@@ -51,6 +50,10 @@ h3 {
 
 @media print
 {    
+    a {
+        text-decoration: none !important;
+        color: black;
+    }
     .no-print, .no-print *
     {
         display: none !important;
@@ -61,5 +64,10 @@ h3 {
     }
     .about {
         margin-top: 0;
+    }
+    .content {
+        width: 100%;
+        max-width: unset;
+        min-width: unset;
     }
 }
