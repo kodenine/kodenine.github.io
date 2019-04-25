@@ -1,6 +1,7 @@
 .sidebar {
-    flex: 0 0 100px;
-    padding: 15px;
+    flex: 0 0 320px;
+    padding: 0 15px 0 0;
+    text-align: right;
 }
 .content {
     max-width: 1024px;
@@ -13,9 +14,6 @@ h2 {
     color: #939393;
     font-size: 1rem;
     margin: 20px 0 15px 0;
-}
-h3 {
-    margin-top: 30px;
 }
 .button-links {
     margin-right: 10px;
@@ -47,9 +45,26 @@ h3 {
 .csl {
     color: #939393;
 }
+.row-page {
+    padding: 10px;
+    margin: 15px 0 0 0;
+}
+.watermark {
+    opacity: 0.5;
+    position: relative;
+    font-size: 50;
+    overflow: hidden;
+    z-index: 10;
+    top: 0;
+    margin-top: -50px;
+    color: #cccccc;
+}
 
 @media print
-{    
+{
+    .row {
+        color: black;
+    }
     a {
         text-decoration: none !important;
         color: black;
@@ -58,9 +73,13 @@ h3 {
     {
         display: none !important;
     }
-    .sidebar {
+    .sidebar.no-print {
         flex: 0 0 0;
         padding: 0;
+    }
+    .sidebar {
+        flex: 0 0 170px;
+        color: #939393;
     }
     .about {
         margin-top: 0;
@@ -69,5 +88,15 @@ h3 {
         width: 100%;
         max-width: unset;
         min-width: unset;
+        padding: 0;
+    }
+    .skills {
+        page-break-before: always;
+    }
+    .watermark {
+        display: none;
+    }
+    .page-divider {
+        border-color: black;
     }
 }
