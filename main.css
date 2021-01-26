@@ -18,6 +18,9 @@ h2 {
 .button-links {
     margin-right: 10px;
 }
+.button-links a:hover {
+    text-decoration: none;   
+}
 .page-divider {
     margin-top: 10px;
     margin-bottom: 5px;
